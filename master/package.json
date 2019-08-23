@@ -1,0 +1,29 @@
+{
+  "name": "master",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "rimraf dist && tsc -p tsconfig.build.json && node dist/master.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^1.19.0",
+    "serve-index": "^1.9.1",
+    "socket.io": "^2.2.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/node": "^12.7.2",
+    "@types/serve-index": "^1.7.30",
+    "@types/socket.io": "^2.1.2",
+    "@types/winston": "^2.4.4",
+    "ts-node": "8.1.0",
+    "tsc-watch": "2.2.1",
+    "tsconfig-paths": "3.8.0",
+    "tslint": "5.16.0",
+    "typescript": "3.4.3"
+  }
+}

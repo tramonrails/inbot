@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+    master:
+        build: ./master
+        image: node-master
+        container_name: master
+        hostname: master
+        ports:
+            - "3000:3000"
+
+    agent:
+        build: ./agent
+        image: node-agent
+        container_name: agent
+        hostname: agent
+        links:
+          - master
+
